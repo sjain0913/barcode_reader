@@ -2,6 +2,7 @@ package com.oblivion.barcode
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 
 import io.flutter.app.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -13,6 +14,7 @@ class MainActivity : FlutterActivity() {
     companion object {
         const val CHANNEL = "com.oblivion.barcode"
         const val KEY_NATIVE = "showNativeView"
+        const val KEY_OTHER = "showOther"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +26,8 @@ class MainActivity : FlutterActivity() {
                 val intent = Intent(this, NativeAndroidActivity::class.java)
                 startActivity(intent)
                 result.success(true)
+            } else if (call.method == KEY_OTHER) {
+                Toast.makeText(this, "Other activity", Toast.LENGTH_SHORT).show()
             } else {
                 result.notImplemented()
             }

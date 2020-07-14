@@ -5,6 +5,7 @@ void main() => runApp(MyApp());
 
 const CHANNEL = "com.oblivion.barcode";
 const KEY_NATIVE = "showNativeView";
+const KEY_OTHER = "showOther";
 
 class MyApp extends StatelessWidget {
   @override
@@ -41,6 +42,10 @@ class MyHomePage extends StatelessWidget {
               child: new Text('Move to Native World!'),
               onPressed: _showNativeView,
             ),
+            new RaisedButton(
+              child: new Text('Other'),
+              onPressed: _showOther,
+            ),
           ],
         ),
       ),
@@ -49,6 +54,10 @@ class MyHomePage extends StatelessWidget {
 
   Future<Null> _showNativeView() async {
     await platform.invokeMethod(KEY_NATIVE);
+  }
+
+  Future<Null> _showOther() async {
+    await platform.invokeMethod(KEY_OTHER);
   }
 
   Future<dynamic> _handleMethod(MethodCall call) async {
