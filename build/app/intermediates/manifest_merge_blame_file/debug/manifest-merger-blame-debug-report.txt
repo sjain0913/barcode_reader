@@ -14,78 +14,79 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\debug\AndroidManifest.xml:6:5-66
 14-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\debug\AndroidManifest.xml:6:22-64
-15    <!--
-16     io.flutter.app.FlutterApplication is an android.app.Application that
-17         calls FlutterMain.startInitialization(this); in its onCreate method.
-18         In most cases you can leave this as-is, but you if you want to provide
-19         additional functionality it is fine to subclass or reimplement
-20         FlutterApplication and put your custom class here.
-21    -->
-22    <application
-22-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:8:5-40:19
-23        android:name="io.flutter.app.FlutterApplication"
-23-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:9:9-57
-24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-24-->[androidx.core:core:1.1.0] C:\Users\Sam\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
-25        android:debuggable="true"
-26        android:icon="@mipmap/ic_launcher"
-26-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:11:9-43
-27        android:label="barcode" >
-27-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:10:9-32
-28        <activity
-28-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:12:9-31:20
-29            android:name="com.oblivion.barcode.MainActivity"
-29-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:13:13-41
-30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-30-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:16:13-163
-31            android:hardwareAccelerated="true"
-31-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:17:13-47
-32            android:launchMode="singleTop"
-32-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:14:13-43
-33            android:theme="@style/LaunchTheme"
-33-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:15:13-47
-34            android:windowSoftInputMode="adjustResize" >
-34-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:18:13-55
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:4:5-79
+15-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:4:22-77
+16
+17    <application
+17-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:5:5-38:19
+18        android:name="io.flutter.app.FlutterApplication"
+18-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:6:9-57
+19        android:allowBackup="true"
+19-->[:DynamsoftBarcodeReader] C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\build\DynamsoftBarcodeReader\.transforms\bd804ecfaf8b789e434a26c0f86c3d7c\DynamsoftBarcodeReader\AndroidManifest.xml:12:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] C:\Users\Sam\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:9:9-43
+23        android:label="barcode"
+23-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:7:9-32
+24        android:supportsRtl="true" >
+24-->[:DynamsoftBarcodeReader] C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\build\DynamsoftBarcodeReader\.transforms\bd804ecfaf8b789e434a26c0f86c3d7c\DynamsoftBarcodeReader\AndroidManifest.xml:14:9-35
+25        <activity
+25-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:10:9-29:20
+26            android:name="com.oblivion.barcode.MainActivity"
+26-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:11:13-41
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:14:13-163
+28            android:hardwareAccelerated="true"
+28-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:15:13-47
+29            android:launchMode="singleTop"
+29-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:12:13-43
+30            android:theme="@style/LaunchTheme"
+30-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:13:13-47
+31            android:windowSoftInputMode="adjustResize" >
+31-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:16:13-55
+32            <meta-data
+32-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:17:13-20:17
+33                android:name="io.flutter.embedding.android.NormalTheme"
+33-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:18:15-70
+34                android:resource="@style/NormalTheme" />
+34-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:19:15-52
 35            <meta-data
-35-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:19:13-22:17
-36                android:name="io.flutter.embedding.android.NormalTheme"
-36-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:20:15-70
-37                android:resource="@style/NormalTheme" />
-37-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:21:15-52
-38            <meta-data
-38-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:23:13-26:17
-39                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-39-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:24:15-79
-40                android:resource="@drawable/launch_background" />
-40-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:25:15-61
+35-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:21:13-24:17
+36                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+36-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:22:15-79
+37                android:resource="@drawable/launch_background" />
+37-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:23:15-61
+38
+39            <intent-filter>
+39-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:25:13-28:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:26:17-68
+40-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:26:25-66
 41
-42            <intent-filter>
-42-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:27:13-30:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:28:17-68
-43-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:28:25-66
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:29:17-76
-45-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:29:27-74
-46            </intent-filter>
-47        </activity>
-48        <activity
-48-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:32:9-34:52
-49            android:name="com.oblivion.barcode.NativeAndroidActivity"
-49-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:33:13-50
-50            android:screenOrientation="portrait" />
-50-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:34:13-49
-51        <!--
-52             Don't delete the meta-data below.
-53             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-54        -->
-55        <meta-data
-55-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:37:9-39:33
-56            android:name="flutterEmbedding"
-56-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:38:13-44
-57            android:value="2" />
-57-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:39:13-30
-58    </application>
-59
-60</manifest>
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:27:17-76
+42-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:27:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:30:9-32:52
+46            android:name="com.oblivion.barcode.NativeAndroidActivity"
+46-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:31:13-50
+47            android:screenOrientation="portrait" />
+47-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:32:13-49
+48        <!--
+49             Don't delete the meta-data below.
+50             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+51        -->
+52        <meta-data
+52-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:35:9-37:33
+53            android:name="flutterEmbedding"
+53-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:36:13-44
+54            android:value="2" />
+54-->C:\Users\Sam\Documents\Work\BostonScientific\TestSoftware\barcode\android\app\src\main\AndroidManifest.xml:37:13-30
+55    </application>
+56
+57</manifest>

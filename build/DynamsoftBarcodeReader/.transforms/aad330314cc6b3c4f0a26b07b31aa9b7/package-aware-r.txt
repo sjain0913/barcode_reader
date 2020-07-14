@@ -1,0 +1,2 @@
+com.dynamsoft.barcode
+string app_name

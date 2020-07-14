@@ -268,7 +268,8 @@ public final class R {
     public static final int ic_launcher=0x7f080000;
   }
   public static final class string {
-    public static final int status_bar_notification_info_overflow=0x7f090000;
+    public static final int app_name=0x7f090000;
+    public static final int status_bar_notification_info_overflow=0x7f090001;
   }
   public static final class style {
     public static final int LaunchTheme=0x7f0a0000;

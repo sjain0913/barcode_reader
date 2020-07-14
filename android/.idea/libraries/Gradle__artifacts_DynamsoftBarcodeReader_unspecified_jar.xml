@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:DynamsoftBarcodeReader:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../build/DynamsoftBarcodeReader/.transforms/bd804ecfaf8b789e434a26c0f86c3d7c/DynamsoftBarcodeReader/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../build/DynamsoftBarcodeReader/.transforms/bd804ecfaf8b789e434a26c0f86c3d7c/DynamsoftBarcodeReader/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

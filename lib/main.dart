@@ -6,6 +6,7 @@ void main() => runApp(MyApp());
 const CHANNEL = "com.oblivion.barcode";
 const KEY_NATIVE = "showNativeView";
 const KEY_OTHER = "showOther";
+const KEY_READ = "read";
 
 class MyApp extends StatelessWidget {
   @override
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   static const platform = const MethodChannel(CHANNEL);
   final String title;
+  final myController = TextEditingController();
 
   MyHomePage({Key key, this.title}) : super(key: key) {
     platform.setMethodCallHandler(_handleMethod);
@@ -46,6 +48,13 @@ class MyHomePage extends StatelessWidget {
               child: new Text('Other'),
               onPressed: _showOther,
             ),
+            new RaisedButton(
+              child: new Text('Read'),
+              onPressed: _showRead,
+            ),
+            new TextField(
+              controller: myController,
+            )
           ],
         ),
       ),
@@ -58,6 +67,11 @@ class MyHomePage extends StatelessWidget {
 
   Future<Null> _showOther() async {
     await platform.invokeMethod(KEY_OTHER);
+  }
+
+  Future<Null> _showRead() async {
+    String message = myController.text;
+    await platform.invokeMethod(KEY_READ,{"barcode":message});
   }
 
   Future<dynamic> _handleMethod(MethodCall call) async {
