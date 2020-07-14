@@ -5,7 +5,6 @@ void main() => runApp(MyApp());
 
 const CHANNEL = "com.oblivion.barcode";
 const KEY_NATIVE = "showNativeView";
-const KEY_OTHER = "showOther";
 const KEY_READ = "read";
 
 class MyApp extends StatelessWidget {
@@ -26,12 +25,17 @@ class MyHomePage extends StatelessWidget {
   final String title;
   final myController = TextEditingController();
 
+  String _result = '';
+  String _filename = '';
+  bool _isExisted = false;
+
   MyHomePage({Key key, this.title}) : super(key: key) {
     platform.setMethodCallHandler(_handleMethod);
   }
 
   @override
   Widget build(BuildContext context) {
+
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(title),
@@ -43,10 +47,6 @@ class MyHomePage extends StatelessWidget {
             new RaisedButton(
               child: new Text('Move to Native World!'),
               onPressed: _showNativeView,
-            ),
-            new RaisedButton(
-              child: new Text('Other'),
-              onPressed: _showOther,
             ),
             new RaisedButton(
               child: new Text('Read'),
@@ -63,10 +63,6 @@ class MyHomePage extends StatelessWidget {
 
   Future<Null> _showNativeView() async {
     await platform.invokeMethod(KEY_NATIVE);
-  }
-
-  Future<Null> _showOther() async {
-    await platform.invokeMethod(KEY_OTHER);
   }
 
   Future<Null> _showRead() async {
